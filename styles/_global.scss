@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-main: #{$bg-light};
+  --background-additional: #{$white};
+  --color-text-op: #{$gray-dark};
+  --color-text: #{$dark-text};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-main: #{$bg-dark};
+    --background-additional: #{$dark};
+    --color-text-op: #{$gray-light};
+    --color-text: #{$white-text};
+  }
+}
+
+@layer components {
+  .image-full {
+    @apply w-full h-full object-cover object-center;
+  }
+
+  .transition-base {
+    @apply transition-all duration-[.4s] ease-in-out;
+  }
+}
+
+body {
+  main{
+    color: var(--color-text);
+    background-color: var(--background-main);
+    
+    &.light {
+      --background-main: #{$bg-light};
+      --background-additional: #{$white};
+      --color-text-op: #{$gray-dark};
+      --color-text: #{$dark-text};
+    }
+
+    &.dark {
+      --background-main: #{$bg-dark};
+      --background-additional: #{$dark};
+      --color-text: #{$white-text};
+      --color-text-op: #{$gray-light};
+    }
+
+    .main-content {
+      &-wrapper {
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background-color: var(--background-main);
+          border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: var(--background-additional);
+          border-radius: 5px;
+          border: 2px solid transparent;
+          background-clip: content-box;
+        }
+      }
+    }
+  }
+}

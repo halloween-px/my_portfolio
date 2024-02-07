@@ -1,0 +1,30 @@
+.listArea {    
+    .listItem {
+        @apply mb-2 last:mb-0;
+
+        a, span {
+            color: var(--color-text);
+        }
+
+        a {
+            @apply hover:text-main;
+        }
+
+        .title {
+            @apply text-main text-body-500 pe-4;
+        }
+        
+        .phone {
+            @apply relative pe-3 last:pe-0 last:after:hidden;
+
+            &::after {
+                content: ';';
+                position: absolute;
+                right: 5px;
+                top: -3px;
+                color: inherit;
+                font-size: inherit;
+            }
+        }
+    }
+}

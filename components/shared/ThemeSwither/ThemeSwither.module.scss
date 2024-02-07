@@ -1,0 +1,16 @@
+.wrapper {
+  @apply flex items-center justify-center w-[30px] h-[30px] rounded cursor-pointer;
+  background-color: var(--color-text-op);
+
+  .item {
+    @apply h-auto w-[20px] flex items-center justify-center;
+
+    svg {
+      @apply w-[13px] h-auto;
+
+      path {
+        fill: var(--background-main);
+      }
+    }
+  }
+}

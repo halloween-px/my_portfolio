@@ -1,0 +1,29 @@
+.title {
+    position: relative;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    font-size: 28px;
+    font-weight: 400;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 5px;
+        width: 55px;
+        border-radius: 8px;
+        @apply bg-main;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        height: 1px;
+        width: 100%;
+        max-width: 255px;
+        background: linear-gradient(90deg, #dba423 40%, rgba(13, 202, 145, 0) 100%);
+    }
+}
