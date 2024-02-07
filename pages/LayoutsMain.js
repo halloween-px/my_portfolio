@@ -1,8 +1,8 @@
 "use client"
-import LeftSidebar from "@/components/shared/Sidebars/LeftSidebar";
-import RightSidebar from "@/components/shared/Sidebars/RightSidebar";
-import ThemeSwitcher from "@/components/shared/ThemeSwither/ThemeSwitcher";
-import { useTheme } from "@/components/shared/ThemeSwither/useTheme";
+import LeftSidebar from "/components/shared/Sidebars/LeftSidebar";
+import RightSidebar from "/components/shared/Sidebars/RightSidebar";
+import ThemeSwitcher from "/components/shared/ThemeSwither/ThemeSwitcher";
+import { useTheme } from "/components/shared/ThemeSwither/useTheme";
 import { useEffect, useState } from "react";
 
 const LayoutsMain = ({ children }) => {

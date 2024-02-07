@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const BtnPrimary = ({ text, link }) => {
+const ButtonMain = ({ text, link }) => {
 	return (
 		<Link
 			href={`${link}`}
@@ -11,4 +11,4 @@ const BtnPrimary = ({ text, link }) => {
 	)
 }
 
-export default BtnPrimary;
+export default ButtonMain;

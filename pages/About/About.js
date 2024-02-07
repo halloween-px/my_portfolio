@@ -1,9 +1,9 @@
 'use client'
 
-import {useMainContext} from "@/components/context/MainContext";
-import Title from "../../components/shared/Title/Title";
-import InfoList from "../../components/shared/InfoList/InfoList";
-import {BtnPrimary} from "../../components/shared/Ui/BtnPrimary";
+import {useMainContext} from "/components/context/MainContext";
+import Title from "/components/shared/Title/Title";
+import InfoList from "/components/shared/InfoList/InfoList";
+import ButtonMain from "/components/shared/Ui/BtnPrimary";
 
 const AboutPage = () => {
 	const { userParams } = useMainContext()
@@ -24,7 +24,7 @@ const AboutPage = () => {
 					<div className='w-2/4'>
 						<Title title={'Обо Мне'} />
 						<InfoList params={userParams} />
-						<BtnPrimary text={'Скачать резюме'} />
+						<ButtonMain text={'Скачать резюме'} />
 					</div>
 				</div>
 			</div>
