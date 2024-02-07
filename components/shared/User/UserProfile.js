@@ -1,8 +1,9 @@
-import { useMainContext } from '../../context/MainContext'
-import { BtnPrimary } from '../Ui/BtnPrimary'
+
+import BtnPrimary from "@/components/shared/Ui/BtnPrimary";
+import {useMainContext} from "@/components/context/MainContext";
 
 const UserProfile = () => {
-	const { userParams } = useMainContext()
+	const { userParams } = useMainContext();
 
 	return (
 		<div>

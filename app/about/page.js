@@ -1,8 +1,11 @@
-import AboutPage from "@/pages/About/About"
+import AboutPage from "@/components/pages/About/About";
 
 const Page = () => {
     return (
-        <AboutPage />
+        <>
+            <AboutPage/>
+        </>
     )
 }
-export default Page
+
+export default Page;

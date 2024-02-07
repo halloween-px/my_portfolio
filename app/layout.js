@@ -1,4 +1,4 @@
-import LayoutsMain from '/pages/LayoutsMain'
+import LayoutsMain from '/components/pages/LayoutsMain'
 import '../styles/app.scss'
 import { Inter } from 'next/font/google'
 import ThemeProvider from '/components/shared/ThemeSwither/ThemeSwitcherProvider'
