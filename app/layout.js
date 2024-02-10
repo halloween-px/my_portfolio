@@ -1,8 +1,8 @@
-import LayoutsMain from '/components/pages/LayoutsMain'
+import LayoutsMain from '@/components/pages/LayoutsMain'
 import '../styles/app.scss'
 import { Inter } from 'next/font/google'
-import ThemeProvider from '/components/shared/ThemeSwither/ThemeSwitcherProvider'
-import { MainProvider } from '/components/context/MainContext'
+import ThemeProvider from '@/components/shared/ThemeSwither/ThemeSwitcherProvider'
+import { MainProvider } from '@/components/context/MainContext'
 
 const inter = Inter({ subsets: ['latin'] })
 

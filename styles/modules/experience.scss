@@ -1,0 +1,17 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  ul {
+    padding: 0 32px;
+
+    li {
+      padding: 0 12px;
+      border-radius: 3px;
+      color: white;
+      background-color: rgba($main, .9);
+      font-size: 12px;
+    }
+  }
+}

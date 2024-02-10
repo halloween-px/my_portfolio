@@ -13,30 +13,14 @@ export const MainProvider = ({ children }) => {
 		skype: 'live:koryakhovruslan9498',
 		name: 'Руслан',
 		family: 'Коряхов',
+		surname: 'Евгеньевич',
 		birthdate: '24.11.1994',
 		town: 'Калуга',
-		experience: [
-			{
-				title: 'JavaScript',
-				text: 'Опыт коммерческой разработки более года',
-			},
-			{
-				title: 'HTML5',
-				text: 'Опыт коммерческой разработки более двух лет',
-			},
-			{
-				title: 'CSS3',
-				text: 'Опыт коммерческой разработки более двух лет',
-			},
-			{
-				title: 'SCSS',
-				text: 'Опыт коммерческой разработки более двух лет',
-			},
-			{
-				title: 'React',
-				text: 'более года',
-			},
-		],
+		experience: {
+			layout: ['html', 'css', 'scss', 'bootstrap', 'tailwind'],
+			client: ['js', 'react', 'next', 'redux',],
+			server: ['nodejs', 'express']
+		},
 	}
 
 	const navigation = [
@@ -51,24 +35,9 @@ export const MainProvider = ({ children }) => {
 			href: routes.about,
 		},
 		{
-			title: 'Резюме',
-			icon: '/my_portfolio/icons/resume.png',
-			href: routes.resume,
-		},
-		{
 			title: 'Портфолио',
 			icon: '/my_portfolio/icons/portfolio.png',
 			href: routes.portfolios,
-		},
-		{
-			title: 'Интересное',
-			icon: '/my_portfolio/icons/interes.png',
-			href: routes.interesting,
-		},
-		{
-			title: 'Контакты',
-			icon: '/my_portfolio/icons/location.png',
-			href: routes.contacts,
 		},
 	]
 
