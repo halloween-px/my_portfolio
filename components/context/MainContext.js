@@ -23,6 +23,51 @@ export const MainProvider = ({ children }) => {
 		},
 	}
 
+	const portfolios = [
+		{
+			id: 1,
+			subtitle: "Корпоративный сайт",
+			title: "Театр кукол",
+			image: '/my_portfolio/portfolio/puppet.jpg',
+			link: 'https://puppet40.ru/',
+		},
+		{
+			id: 2,
+			subtitle: "Корпоративный сайт",
+			title: "Калуга Инк",
+			image: '/my_portfolio/portfolio/tatu.jpg',
+			link: 'https://kalugaink.ru/'
+		},
+		{
+			id: 3,
+			subtitle: "Интернет магазин",
+			title: "Gansta Style Russian",
+			link: "https://gangstastylerussian.store/",
+			image: '/my_portfolio/portfolio/gansta.jpg',
+		},
+		{
+			id: 4,
+			subtitle: "Лендинг",
+			title: "АльянсГрупп",
+			link: 'https://alyance-grup.ru/',
+			image: '/my_portfolio/portfolio/alyance.jpg',
+		},
+		{
+			id: 5,
+			subtitle: "Лендинг",
+			title: "Алла Михайлова",
+			link: 'https://allamikhailova.ru/',
+			image: '/my_portfolio/portfolio/mikhailova.jpg',
+		},
+		{
+			id: 6,
+			subtitle: "Корпоративный сайт",
+			title: "BestFood",
+			link: 'https://bestfood.catering/',
+			image: '/my_portfolio/portfolio/bestFood.jpg',
+		},
+	]
+
 	const navigation = [
 		{
 			title: 'Главная',
@@ -64,6 +109,7 @@ export const MainProvider = ({ children }) => {
 		userParams,
 		navigation,
 		paramsInfo,
+		portfolios,
 	}
 
 	return <MainContext.Provider value={value}>{children}</MainContext.Provider>

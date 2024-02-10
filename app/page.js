@@ -11,8 +11,7 @@ const Hero = () => {
 					Frontend developer
 				</h5>
 				<h2 className='text-[32px] font-bold'>
-					Привет, меня зовут
-					<span className='text-main'>{userParams.name}</span>
+					Привет, меня зовут <span className='text-main'>{userParams.name}</span>
 					<br /> Добро пожаловать
 				</h2>
 			</div>

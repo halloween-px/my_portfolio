@@ -6,7 +6,7 @@ const UserProfile = () => {
 
 	return (
 		<div>
-			<div className='text-center rounded-full overflow-hidden ms-auto me-auto max-w-[180px]'>
+			<div className='text-center rounded-full overflow-hidden ms-auto me-auto max-w-[130px]'>
 				<img src={userParams.img} className='image-full' alt='#' />
 			</div>
 			<h5 className='text-[12px] text-center mt-4 tracking-[2px] uppercase text-main'>

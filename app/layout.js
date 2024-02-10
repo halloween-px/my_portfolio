@@ -7,8 +7,8 @@ import { MainProvider } from '@/components/context/MainContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: 'portfolio',
-	description: 'My portfolio',
+	title: 'portfolios',
+	description: 'My portfolios',
 }
 
 export default function RootLayout({ children }) {
